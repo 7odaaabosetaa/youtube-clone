@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from './assets/componantes/navbar/Navbar.jsx';
 import Home from './assets/pages/home/Home.jsx';
-import Sidebar from './assets/componantes/navbar/sidebar/sidebar.jsx';
+import Video from "./assets/componantes/videos/video.jsx";
+
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -13,10 +14,9 @@ const App = () => {
     <div>
       <Navbar setSidebar={setSidebar}/>
       <main>
-        <Sidebar sidebar={sidebar}/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/video/' element={<Home/>}/>
+          <Route path='/' element={<Home sidebar={sidebar}/>}/>
+          <Route path='/video/:categoryId/:videoId' element={<Video/>}/>
         </Routes>
         
       </main>

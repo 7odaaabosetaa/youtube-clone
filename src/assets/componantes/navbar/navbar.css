@@ -1,5 +1,5 @@
 nav{
-    height: 70px;
+    height: 50px;
     position: sticky;
     box-shadow: -4px -4px 13px 0px #998a8ab3;
     z-index:10;
@@ -18,7 +18,7 @@ nav img:not(.youtube) {
 
 }
 nav .youtube{
-    max-height: 60px;
+    max-height: 50px;
     cursor: pointer;
 
 }
@@ -33,7 +33,7 @@ nav .middle{
     border-radius: 25px;
     border: 1px solid #ceb5b5;
     min-width: 300px;
-    padding: 10px 25px;
+    padding: 5px 25px;
    
     
 }
@@ -49,3 +49,36 @@ nav .right :last-child{
     border-radius: 50%;
 }
 
+@media  (max-width: 992px) {
+    nav .middle{
+        max-width: 200px;
+        min-width: 200px;
+    }
+    nav input{
+        width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    nav input{
+        display: none;
+    }
+    nav .middle{
+        max-width: 50px;
+        min-width: 50px;
+        border: none;
+        flex-shrink: 3;
+        padding: 0;
+        border-radius: 0;
+    }
+    nav .middle img{
+        margin: auto;
+    }
+    nav .right,.left{
+        flex-grow: 2;
+    }
+    nav .right{
+        justify-content: right;
+    }
+    
+}

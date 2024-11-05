@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import YoutubeIcon from "../../files/youtube-logo.png"
 import  "./navbar.css";
@@ -13,6 +14,7 @@ import Sidebar from './sidebar/sidebar';
 
 
 
+// eslint-disable-next-line react/prop-types
 function Navbar({setSidebar}) {
 
     return (

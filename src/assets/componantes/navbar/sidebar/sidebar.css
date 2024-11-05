@@ -1,7 +1,7 @@
 .sidebar{
 max-width: 600px;
 min-width: fit-content;
-background-color: rgb(255, 223, 223);
+/* background-color: rgb(255, 223, 223); */
 padding: 20px 7px 20px 9px;
 color: #464040;
 padding-right: 30px;
@@ -50,6 +50,13 @@ display: none;
     
 }
 
+/*  */
 
-
-
+.sidebar  .active{
+    margin-bottom: 20px;
+}
+.sidebar .active img {
+    padding-bottom: 4px ;
+    width: 30px;
+    border-bottom: 3px solid rgb(207, 2, 2);
+}
